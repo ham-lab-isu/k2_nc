@@ -3,12 +3,18 @@
 <package format="3">
   <name>k2_nc</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="jdham@iastate.edu">Jakob Hamilton</maintainer>
+  <description>G-code driver for Kawasaki robot using KRNX</description>
+  <maintainer email="kaiya@example.com">kaiya</maintainer>
   <license>MIT</license>
 
-  <build_depend>ament_cmake</build_depend>
-  
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
   <export>
     <build_type>ament_cmake</build_type>
   </export>
